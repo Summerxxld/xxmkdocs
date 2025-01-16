@@ -1,0 +1,6 @@
+site_name: xxld's notebook
+nav:
+    - Home: index.md
+    - About: about.md
+theme: 
+  name: 'material'
