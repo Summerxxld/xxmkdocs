@@ -12,6 +12,8 @@
         <link rel="prev" href="../os/">
       
       
+        <link rel="next" href="../security/">
+      
       
       <link rel="icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
@@ -68,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#lec01" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -197,6 +204,23 @@
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../杂项： - csapp：zju/csapp.md" class="md-tabs__link">
+        
+  
+    
+  
+  None
+
+      </a>
+    </li>
   
 
       
@@ -373,6 +397,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    面向对象程序设计
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -383,6 +418,53 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lec01" class="md-nav__link">
+    <span class="md-ellipsis">
+      lec01
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数据安全与隐私保护
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -391,6 +473,26 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../杂项： - csapp：zju/csapp.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    None
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -413,6 +515,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lec01" class="md-nav__link">
+    <span class="md-ellipsis">
+      lec01
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -429,9 +548,48 @@
   <h1>面向对象程序设计</h1>
 
 <div class="admonition note">
-<p class="admonition-title">寒假一定</p>
-<p>oop是暑假就叫着叫着要学的。寒假一定，准备看大翁老师的学一学.</p>
+<p class="admonition-title">note</p>
+<p>选的cx,听的wk</p>
 </div>
+<h2 id="lec01">lec01<a class="headerlink" href="#lec01" title="Permanent link"></a></h2>
+<p>主要是引入，后面都会提到遂略过。
+- 输入输出格式
+    - iomanip</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>  setw():指定宽度
+
+  setprecision():浮点数指定位数
+
+- getline
+
+    getline(cin,s)可以读取一整行包含空格的
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>string类<ul>
+<li>
+<p>定义和赋值</p>
+<p>string str1="hello"</p>
+<p>string str2;</p>
+<p>str2=str1;
+    - 特性</p>
+<p>可以被看成array
+    - 用法</p>
+<p><code>string str3=str1+str2;</code>
+<code>s.length();</code>
+<code>append(str);</code>
+<code>erase(pos,len);</code>
+<code>insert(pos,str);</code>
+<code>replace(pos,len,str);</code>
+<code>find(str,pos);</code></p>
+</li>
+</ul>
+</li>
+</ul>
 
 
 
