@@ -813,41 +813,21 @@
 </ul>
 <h2 id="lec-02">Lec 02<a class="headerlink" href="#lec-02" title="Permanent link"></a></h2>
 <h3 id="reference-引用">reference 引用<a class="headerlink" href="#reference-引用" title="Permanent link"></a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>`````swap(int&amp; a,int&amp; b)`````
-
-可以直接操作
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>swap(int&amp; a,int&amp; b)
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>可以直接操作
 </code></pre></div></td></tr></table></div>
 <h3 id="overloading">overloading<a class="headerlink" href="#overloading" title="Permanent link"></a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>函数重载，同名
-````cpp
-double min_element()
-````
-
-````cpp
-int min_element()
-````
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>函数重载，同名
 </code></pre></div></td></tr></table></div>
+<p><code>double min_element()
+    int min_element()</code></p>
 <h3 id="function-template">function template<a class="headerlink" href="#function-template" title="Permanent link"></a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>将函数做成模板
-
-````cpp
-template &lt;typename T&gt;
-swap(T&amp; a,T&amp; b);
-````
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>将函数做成模板
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>    template &lt;typename T&gt;
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>    swap(T&amp; a,T&amp; b);
 </code></pre></div></td></tr></table></div>
 <h3 id="encapsulation">encapsulation<a class="headerlink" href="#encapsulation" title="Permanent link"></a></h3>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link"></a></h3>
