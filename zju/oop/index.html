@@ -783,40 +783,40 @@
 <h3 id="string类">string类<a class="headerlink" href="#string类" title="Permanent link"></a></h3>
 <ul>
 <li>
-<p>定义和赋值</p>
+<p>定义和赋值
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>string str1=&quot;hello&quot;;
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>string str2;
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>str2=str1;
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>特性</p>
+<p>可以被看成array
+- 用法</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>```c++
-string str1=&quot;hello&quot;;
-string str2;
-str2=str1;
-```
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>string str3=str1+str2;
+s.length();
+append(str);
+erase(pos,len);
+insert(pos,str);
+replace(pos,len,str);
+find(str,pos);
 </code></pre></div></td></tr></table></div>
-<ul>
-<li>特性</li>
-</ul>
-<p>可以被看成array
-- 用法</p>
-<p><code>c++
-    string str3=str1+str2;
-    s.length();
-    append(str);
-    erase(pos,len);
-    insert(pos,str);
-    replace(pos,len,str);
-    find(str,pos);</code></p>
 </li>
 </ul>
 <h2 id="lec-02">Lec 02<a class="headerlink" href="#lec-02" title="Permanent link"></a></h2>
 <h3 id="reference-引用">reference 引用<a class="headerlink" href="#reference-引用" title="Permanent link"></a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>```cpp
-swap(int&amp; a,int&amp; b) 
-```
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>`swap(int&amp; a,int&amp; b)`
+
 可以直接操作
 </code></pre></div></td></tr></table></div>
 <h3 id="overloading">overloading<a class="headerlink" href="#overloading" title="Permanent link"></a></h3>
