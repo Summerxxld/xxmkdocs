@@ -812,24 +812,38 @@ str2=str1;
 <h2 id="lec-02">Lec 02<a class="headerlink" href="#lec-02" title="Permanent link"></a></h2>
 <h3 id="reference-引用">reference 引用<a class="headerlink" href="#reference-引用" title="Permanent link"></a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>` swap(int&amp; a,int&amp; b) `
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>```cpp
+swap(int&amp; a,int&amp; b) 
+```
 可以直接操作
 </code></pre></div></td></tr></table></div>
 <h3 id="overloading">overloading<a class="headerlink" href="#overloading" title="Permanent link"></a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>函数重载，同名
-` double min_element()`
-` int min_element() `
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>函数重载，同名
+```cpp
+double min_element()
+```
+```cpp
+int min_element()
+```
 </code></pre></div></td></tr></table></div>
 <h3 id="function-template">function template<a class="headerlink" href="#function-template" title="Permanent link"></a></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>将函数做成模板
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>将函数做成模板
 ```cpp
 template &lt;typename T&gt;
-void swap(T&amp; a,T&amp; b);```
+swap(T&amp; a,T&amp; b);
+```
 </code></pre></div></td></tr></table></div>
 <h3 id="encapsulation">encapsulation<a class="headerlink" href="#encapsulation" title="Permanent link"></a></h3>
 <h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link"></a></h3>
