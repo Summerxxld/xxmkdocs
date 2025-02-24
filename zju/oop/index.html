@@ -485,36 +485,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#overloading" class="md-nav__link">
+  <a href="#overloading-重载" class="md-nav__link">
     <span class="md-ellipsis">
-      overloading
+      overloading 重载
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-template" class="md-nav__link">
+  <a href="#function-template-模板" class="md-nav__link">
     <span class="md-ellipsis">
-      function template
+      function template 模板
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#encapsulation" class="md-nav__link">
+  <a href="#encapsulation-封装" class="md-nav__link">
     <span class="md-ellipsis">
-      encapsulation
+      encapsulation 封装
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
+  <a href="#constructor-构造函数构造器" class="md-nav__link">
     <span class="md-ellipsis">
-      constructor
+      constructor 构造函数，构造器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheritence-继承" class="md-nav__link">
+    <span class="md-ellipsis">
+      inheritence 继承
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymorphism-多态" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymorphism 多态
     </span>
   </a>
   
@@ -707,36 +725,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#overloading" class="md-nav__link">
+  <a href="#overloading-重载" class="md-nav__link">
     <span class="md-ellipsis">
-      overloading
+      overloading 重载
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-template" class="md-nav__link">
+  <a href="#function-template-模板" class="md-nav__link">
     <span class="md-ellipsis">
-      function template
+      function template 模板
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#encapsulation" class="md-nav__link">
+  <a href="#encapsulation-封装" class="md-nav__link">
     <span class="md-ellipsis">
-      encapsulation
+      encapsulation 封装
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
+  <a href="#constructor-构造函数构造器" class="md-nav__link">
     <span class="md-ellipsis">
-      constructor
+      constructor 构造函数，构造器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheritence-继承" class="md-nav__link">
+    <span class="md-ellipsis">
+      inheritence 继承
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polymorphism-多态" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polymorphism 多态
     </span>
   </a>
   
@@ -816,20 +852,145 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>swap(int&amp; a,int&amp; b)
 </code></pre></div></td></tr></table></div>
 <p>可以直接操作</p>
-<h3 id="overloading">overloading<a class="headerlink" href="#overloading" title="Permanent link"></a></h3>
-<p>函数重载，同名</p>
+<h3 id="overloading-重载">overloading 重载<a class="headerlink" href="#overloading-重载" title="Permanent link"></a></h3>
+<p>函数重载</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>double min_element()
 <a id="__codelineno-3-2" name="__codelineno-3-2"></a>int min_element()
 </code></pre></div></td></tr></table></div>
-<h3 id="function-template">function template<a class="headerlink" href="#function-template" title="Permanent link"></a></h3>
-<p>将函数做成模板</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>template &lt;typename T&gt;
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>swap(T&amp; a,T&amp; b);
+<p>重载运算符</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>struct Student {
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>  int id;
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>  std::string name;
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>};
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>bool operator&lt;(const Student&amp; s1, const Student&amp; s2)
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>{
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>  return s1.id &lt; s2.id;
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>}
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, const Student&amp; s)
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>{
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a>  return out &lt;&lt; &quot;(&quot; &lt;&lt; s.id &lt;&lt; &quot;,&quot; &lt;&lt; s.name &lt;&lt; &quot;)&quot;;
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a>}
 </code></pre></div></td></tr></table></div>
-<h3 id="encapsulation">encapsulation<a class="headerlink" href="#encapsulation" title="Permanent link"></a></h3>
-<h3 id="constructor">constructor<a class="headerlink" href="#constructor" title="Permanent link"></a></h3>
+<h3 id="function-template-模板">function template 模板<a class="headerlink" href="#function-template-模板" title="Permanent link"></a></h3>
+<p>将函数做成模板</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>template &lt;typename T&gt;
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>swap(T&amp; a,T&amp; b);
+</code></pre></div></td></tr></table></div>
+<h3 id="encapsulation-封装">encapsulation 封装<a class="headerlink" href="#encapsulation-封装" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>class Rectangle{
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>private:
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>    double w,h;
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a>}
+</code></pre></div></td></tr></table></div>
+<h3 id="constructor-构造函数构造器">constructor 构造函数，构造器<a class="headerlink" href="#constructor-构造函数构造器" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>class Rectangle{
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>private:
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>    double w,h；
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>public:
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    Rectangle(double w,double h):w(w),h(h) {}
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a>}
+</code></pre></div></td></tr></table></div>
+<h3 id="inheritence-继承">inheritence 继承<a class="headerlink" href="#inheritence-继承" title="Permanent link"></a></h3>
+<p>子类可以看到父类的proteceted
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span>
+<span class="normal"><a href="#__codelineno-8-15">15</a></span>
+<span class="normal"><a href="#__codelineno-8-16">16</a></span>
+<span class="normal"><a href="#__codelineno-8-17">17</a></span>
+<span class="normal"><a href="#__codelineno-8-18">18</a></span>
+<span class="normal"><a href="#__codelineno-8-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>class Shape {
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>protected:
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>  double area, perimeter;
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>public:
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a>  virtual ~Shape() {}
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a>  virtual void calc_area() = 0;
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>  virtual void calc_perimeter() = 0;
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>  virtual std::string name() const = 0;
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a>  double get_area() const { return area; }
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a>  double get_perimeter() const { return perimeter; }
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a>  friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp;, const Shape&amp;);
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a>};
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a>class Rectangle : public Shape {
+<a id="__codelineno-8-18" name="__codelineno-8-18"></a>
+<a id="__codelineno-8-19" name="__codelineno-8-19"></a>  }
+</code></pre></div></td></tr></table></div></p>
+<p>这样是不行的，会发生截断
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>Shape arr[]={Rectangle(2,3),Rectangle(5,5),Circle(3,3)}
+</code></pre></div></td></tr></table></div></p>
+<p>可以向上造型
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>Shape* arr={new Rectangle(2,3),new Rectangle(3,5)}
+</code></pre></div></td></tr></table></div></p>
+<h3 id="polymorphism-多态">Polymorphism 多态<a class="headerlink" href="#polymorphism-多态" title="Permanent link"></a></h3>
+<p>virtual function 基类，子类必须override纯虚函数</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>public:
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>  virtual ~Shape() {}
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a>  virtual void calc_area() = 0;
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a>  virtual void calc_perimeter() = 0;
+</code></pre></div></td></tr></table></div>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span>
+<span class="normal"><a href="#__codelineno-12-5">5</a></span>
+<span class="normal"><a href="#__codelineno-12-6">6</a></span>
+<span class="normal"><a href="#__codelineno-12-7">7</a></span>
+<span class="normal"><a href="#__codelineno-12-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>public:
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a>  Rectangle(double w, double h) : w(w), h(h) {}
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>  void calc_area() override {
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a>    area = w * h;
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a>  }
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a>  void calc_perimeter() override {
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a>    perimeter = 2 * (w + h);
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a>  }
+</code></pre></div></td></tr></table></div>
+- 友元函数
+    类的友元函数定义在类外部，但有权访问类的所有私有（private）成员和保护（protected）成员</p>
 
 
 
