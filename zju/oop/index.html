@@ -1372,8 +1372,8 @@ Adaptors(基于其他容器，提供特定接口)：stack(底层容器是vector�
 <a id="__codelineno-18-7" name="__codelineno-18-7"></a>  cout&lt;&lt;*p;
 </code></pre></div></td></tr></table></div>
 <h4 id="map">map<a class="headerlink" href="#map" title="Permanent link"></a></h4>
-<p>是键值对的集合，如电话簿<string,string>
-关于下标访问，要注意是否存在</p>
+<p>是键值对的集合，如电话簿<string,string></p>
+<p>关于下标访问，要注意是否存在</p>
 <p>遍历
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
 <span class="normal"><a href="#__codelineno-19-2">2</a></span>
@@ -1400,36 +1400,43 @@ Adaptors(基于其他容器，提供特定接口)：stack(底层容器是vector�
 <a id="__codelineno-21-3" name="__codelineno-21-3"></a>}
 </code></pre></div></td></tr></table></div>
 <h4 id="stack">stack<a class="headerlink" href="#stack" title="Permanent link"></a></h4>
-<p>stack只能通过top()访问栈顶元素，也不能在空栈上调用</p>
-<p>push(value);
-pop()移除栈顶元素
-s.top()返回栈顶元素的引用</p>
-<h3 id="interators">interators<a class="headerlink" href="#interators" title="Permanent link"></a></h3>
-<p>产生一个指针，有规律去访问元素</p>
+<p>stack只能通过top()访问栈顶元素，也不能在空栈上调用
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
 <span class="normal"><a href="#__codelineno-22-2">2</a></span>
 <span class="normal"><a href="#__codelineno-22-3">3</a></span>
-<span class="normal"><a href="#__codelineno-22-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>vector&lt;int&gt; v;
-<a id="__codelineno-22-2" name="__codelineno-22-2"></a>vector&lt;int&gt; u;
-<a id="__codelineno-22-3" name="__codelineno-22-3"></a>
-<a id="__codelineno-22-4" name="__codelineno-22-4"></a>reverse(v.begin(),v.end());
+<span class="normal"><a href="#__codelineno-22-4">4</a></span>
+<span class="normal"><a href="#__codelineno-22-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a>push(value);
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a>
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a>pop()/*移除栈顶元素*/
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a>
+<a id="__codelineno-22-5" name="__codelineno-22-5"></a>s.top()/*返回栈顶元素的引用*/
+</code></pre></div></td></tr></table></div></p>
+<h3 id="interators">interators<a class="headerlink" href="#interators" title="Permanent link"></a></h3>
+<p>产生一个指针，有规律去访问元素</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
+<span class="normal"><a href="#__codelineno-23-2">2</a></span>
+<span class="normal"><a href="#__codelineno-23-3">3</a></span>
+<span class="normal"><a href="#__codelineno-23-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a>vector&lt;int&gt; v;
+<a id="__codelineno-23-2" name="__codelineno-23-2"></a>vector&lt;int&gt; u;
+<a id="__codelineno-23-3" name="__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4"></a>reverse(v.begin(),v.end());
 </code></pre></div></td></tr></table></div>
 <h3 id="algorithm">Algorithm<a class="headerlink" href="#algorithm" title="Permanent link"></a></h3>
 <p>Functions that operate on ranges of elements.</p>
 <h3 id="typedef">typedef<a class="headerlink" href="#typedef" title="Permanent link"></a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-23-1">1</a></span>
-<span class="normal"><a href="#__codelineno-23-2">2</a></span>
-<span class="normal"><a href="#__codelineno-23-3">3</a></span>
-<span class="normal"><a href="#__codelineno-23-4">4</a></span>
-<span class="normal"><a href="#__codelineno-23-5">5</a></span>
-<span class="normal"><a href="#__codelineno-23-6">6</a></span>
-<span class="normal"><a href="#__codelineno-23-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a>//太长
-<a id="__codelineno-23-2" name="__codelineno-23-2"></a>map&lt;name,list&lt;num&gt;&gt; phonebook;
-<a id="__codelineno-23-3" name="__codelineno-23-3"></a>map&lt;name,list&lt;num&gt;&gt; phonebook::iterator finger;
-<a id="__codelineno-23-4" name="__codelineno-23-4"></a>
-<a id="__codelineno-23-5" name="__codelineno-23-5"></a>typedef map&lt;name,list&lt;num&gt;&gt; PB;
-<a id="__codelineno-23-6" name="__codelineno-23-6"></a>PB phonebook;
-<a id="__codelineno-23-7" name="__codelineno-23-7"></a>PB::iterator finger;
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1">1</a></span>
+<span class="normal"><a href="#__codelineno-24-2">2</a></span>
+<span class="normal"><a href="#__codelineno-24-3">3</a></span>
+<span class="normal"><a href="#__codelineno-24-4">4</a></span>
+<span class="normal"><a href="#__codelineno-24-5">5</a></span>
+<span class="normal"><a href="#__codelineno-24-6">6</a></span>
+<span class="normal"><a href="#__codelineno-24-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a>//太长
+<a id="__codelineno-24-2" name="__codelineno-24-2"></a>map&lt;name,list&lt;num&gt;&gt; phonebook;
+<a id="__codelineno-24-3" name="__codelineno-24-3"></a>map&lt;name,list&lt;num&gt;&gt; phonebook::iterator finger;
+<a id="__codelineno-24-4" name="__codelineno-24-4"></a>
+<a id="__codelineno-24-5" name="__codelineno-24-5"></a>typedef map&lt;name,list&lt;num&gt;&gt; PB;
+<a id="__codelineno-24-6" name="__codelineno-24-6"></a>PB phonebook;
+<a id="__codelineno-24-7" name="__codelineno-24-7"></a>PB::iterator finger;
 </code></pre></div></td></tr></table></div>
 
 
