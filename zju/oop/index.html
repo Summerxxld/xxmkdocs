@@ -687,6 +687,93 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lec-04-memory-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lec 04 memory model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lec 04 memory model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    <span class="md-ellipsis">
+      global
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static" class="md-nav__link">
+    <span class="md-ellipsis">
+      static
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointer" class="md-nav__link">
+    <span class="md-ellipsis">
+      pointer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference数据类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      reference(数据类型)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#动态内存分配" class="md-nav__link">
+    <span class="md-ellipsis">
+      动态内存分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const" class="md-nav__link">
+    <span class="md-ellipsis">
+      const
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    <span class="md-ellipsis">
+      string
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1092,6 +1179,93 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lec-04-memory-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lec 04 memory model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lec 04 memory model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global" class="md-nav__link">
+    <span class="md-ellipsis">
+      global
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#static" class="md-nav__link">
+    <span class="md-ellipsis">
+      static
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pointer" class="md-nav__link">
+    <span class="md-ellipsis">
+      pointer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference数据类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      reference(数据类型)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#动态内存分配" class="md-nav__link">
+    <span class="md-ellipsis">
+      动态内存分配
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#const" class="md-nav__link">
+    <span class="md-ellipsis">
+      const
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    <span class="md-ellipsis">
+      string
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1437,6 +1611,271 @@ Adaptors(基于其他容器，提供特定接口)：stack(底层容器是vector�
 <a id="__codelineno-24-5" name="__codelineno-24-5"></a>typedef map&lt;name,list&lt;num&gt;&gt; PB;
 <a id="__codelineno-24-6" name="__codelineno-24-6"></a>PB phonebook;
 <a id="__codelineno-24-7" name="__codelineno-24-7"></a>PB::iterator finger;
+</code></pre></div></td></tr></table></div>
+<h2 id="lec-04-memory-model">Lec 04 memory model<a class="headerlink" href="#lec-04-memory-model" title="Permanent link"></a></h2>
+<h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link"></a></h3>
+<ul>
+<li>全局
+global/static global static local</li>
+<li>stack
+  local parameter</li>
+</ul>
+<h3 id="global">global<a class="headerlink" href="#global" title="Permanent link"></a></h3>
+<p>definition 存储空间</p>
+<h3 id="static">static<a class="headerlink" href="#static" title="Permanent link"></a></h3>
+<ul>
+<li>永久存储，放在全局数据区</li>
+<li>访问范围限制,只能在本编译单元访问（static global,static local=local）</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-25-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-25-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-25-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-25-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-25-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-25-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-25-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-25-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-25-10">10</a></span>
+<span class="normal"><a href="#__codelineno-25-11">11</a></span>
+<span class="normal"><a href="#__codelineno-25-12">12</a></span>
+<span class="normal"><a href="#__codelineno-25-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a>void access()
+<a id="__codelineno-25-2" name="__codelineno-25-2"></a>{
+<a id="__codelineno-25-3" name="__codelineno-25-3"></a> //static 放在全局数据区
+<a id="__codelineno-25-4" name="__codelineno-25-4"></a> static int count=0;
+<a id="__codelineno-25-5" name="__codelineno-25-5"></a> cout&lt;&lt;&quot;access count:&quot;&lt;&lt;++count&lt;&lt;endl;
+<a id="__codelineno-25-6" name="__codelineno-25-6"></a>}
+<a id="__codelineno-25-7" name="__codelineno-25-7"></a>
+<a id="__codelineno-25-8" name="__codelineno-25-8"></a>int main(){
+<a id="__codelineno-25-9" name="__codelineno-25-9"></a>  //
+<a id="__codelineno-25-10" name="__codelineno-25-10"></a>  for(int i=0;i&lt;10;i++){
+<a id="__codelineno-25-11" name="__codelineno-25-11"></a>    access();
+<a id="__codelineno-25-12" name="__codelineno-25-12"></a>  }
+<a id="__codelineno-25-13" name="__codelineno-25-13"></a>}
+</code></pre></div></td></tr></table></div>
+<h3 id="pointer">pointer<a class="headerlink" href="#pointer" title="Permanent link"></a></h3>
+<ul>
+<li>assignment</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-26-1">1</a></span>
+<span class="normal"><a href="#__codelineno-26-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a>string *ps1,*ps2;
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a>ps1=ps2;//
+</code></pre></div></td></tr></table></div>
+<h3 id="reference数据类型">reference(数据类型)<a class="headerlink" href="#reference数据类型" title="Permanent link"></a></h3>
+<p>必须initialize ,无法重新绑定
+- pointers to reference illegal
+- reference to pointers ,Ok
+    - f(int *&amp; num)</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-27-1">1</a></span>
+<span class="normal"><a href="#__codelineno-27-2">2</a></span>
+<span class="normal"><a href="#__codelineno-27-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1"></a>int x=47;
+<a id="__codelineno-27-2" name="__codelineno-27-2"></a>int &amp;y=x;//y=x=47
+<a id="__codelineno-27-3" name="__codelineno-27-3"></a>y=18;//y=x=18
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-28-1">1</a></span>
+<span class="normal"><a href="#__codelineno-28-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1"></a>void f(int&amp; x);
+<a id="__codelineno-28-2" name="__codelineno-28-2"></a>f(y);//initialized when function is called
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-29-1">1</a></span>
+<span class="normal"><a href="#__codelineno-29-2">2</a></span>
+<span class="normal"><a href="#__codelineno-29-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1"></a>//必须绑定的是Lvalue
+<a id="__codelineno-29-2" name="__codelineno-29-2"></a>void func(int &amp;);
+<a id="__codelineno-29-3" name="__codelineno-29-3"></a>func(i*3);//错
+</code></pre></div></td></tr></table></div>
+<p>可以对指针进行引用，但是不能引用的指针
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-30-1">1</a></span>
+<span class="normal"><a href="#__codelineno-30-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1"></a>int &amp;* p;//错，引用就是本身
+<a id="__codelineno-30-2" name="__codelineno-30-2"></a>void f(int*&amp; p);
+</code></pre></div></td></tr></table></div></p>
+<h3 id="动态内存分配">动态内存分配<a class="headerlink" href="#动态内存分配" title="Permanent link"></a></h3>
+<p>new delete</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-31-1">1</a></span>
+<span class="normal"><a href="#__codelineno-31-2">2</a></span>
+<span class="normal"><a href="#__codelineno-31-3">3</a></span>
+<span class="normal"><a href="#__codelineno-31-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1"></a>new a;
+<a id="__codelineno-31-2" name="__codelineno-31-2"></a>new a[10];//数组
+<a id="__codelineno-31-3" name="__codelineno-31-3"></a>delete a;
+<a id="__codelineno-31-4" name="__codelineno-31-4"></a>delete[] a;//数组，不能混用
+</code></pre></div></td></tr></table></div>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-32-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-32-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-32-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-32-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-32-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-32-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-32-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-32-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-32-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-32-10">10</a></span>
+<span class="normal"><a href="#__codelineno-32-11">11</a></span>
+<span class="normal"><a href="#__codelineno-32-12">12</a></span>
+<span class="normal"><a href="#__codelineno-32-13">13</a></span>
+<span class="normal"><a href="#__codelineno-32-14">14</a></span>
+<span class="normal"><a href="#__codelineno-32-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1"></a>int main(){
+<a id="__codelineno-32-2" name="__codelineno-32-2"></a>  int *pa=new int(100);
+<a id="__codelineno-32-3" name="__codelineno-32-3"></a>  cout&lt;&lt;*pa&lt;&lt;endl;
+<a id="__codelineno-32-4" name="__codelineno-32-4"></a>
+<a id="__codelineno-32-5" name="__codelineno-32-5"></a>  int *parr= new int[10];
+<a id="__codelineno-32-6" name="__codelineno-32-6"></a>  for(int i=0;i&lt;10;++i){
+<a id="__codelineno-32-7" name="__codelineno-32-7"></a>    parr[i]=i;
+<a id="__codelineno-32-8" name="__codelineno-32-8"></a>  }
+<a id="__codelineno-32-9" name="__codelineno-32-9"></a>  for(int i=0;i&lt;10;++i){
+<a id="__codelineno-32-10" name="__codelineno-32-10"></a>    cout&lt;&lt;parr[i]&lt;endl;
+<a id="__codelineno-32-11" name="__codelineno-32-11"></a>  }
+<a id="__codelineno-32-12" name="__codelineno-32-12"></a>
+<a id="__codelineno-32-13" name="__codelineno-32-13"></a> delete pa;
+<a id="__codelineno-32-14" name="__codelineno-32-14"></a> delete []parr;
+<a id="__codelineno-32-15" name="__codelineno-32-15"></a>}
+</code></pre></div></td></tr></table></div>
+会触发构造函数和析构函数（与malloc&amp;&amp;free的区别）
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-33-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-33-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-33-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-33-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-33-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-33-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-33-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-33-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-33-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-33-10">10</a></span>
+<span class="normal"><a href="#__codelineno-33-11">11</a></span>
+<span class="normal"><a href="#__codelineno-33-12">12</a></span>
+<span class="normal"><a href="#__codelineno-33-13">13</a></span>
+<span class="normal"><a href="#__codelineno-33-14">14</a></span>
+<span class="normal"><a href="#__codelineno-33-15">15</a></span>
+<span class="normal"><a href="#__codelineno-33-16">16</a></span>
+<span class="normal"><a href="#__codelineno-33-17">17</a></span>
+<span class="normal"><a href="#__codelineno-33-18">18</a></span>
+<span class="normal"><a href="#__codelineno-33-19">19</a></span>
+<span class="normal"><a href="#__codelineno-33-20">20</a></span>
+<span class="normal"><a href="#__codelineno-33-21">21</a></span>
+<span class="normal"><a href="#__codelineno-33-22">22</a></span>
+<span class="normal"><a href="#__codelineno-33-23">23</a></span>
+<span class="normal"><a href="#__codelineno-33-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1"></a>struct Student{
+<a id="__codelineno-33-2" name="__codelineno-33-2"></a>  int id;
+<a id="__codelineno-33-3" name="__codelineno-33-3"></a>  Student(){
+<a id="__codelineno-33-4" name="__codelineno-33-4"></a>    id=0;
+<a id="__codelineno-33-5" name="__codelineno-33-5"></a>    cout&lt;&lt;&quot;Student&quot;&lt;&lt;endl;//被调用时
+<a id="__codelineno-33-6" name="__codelineno-33-6"></a>  }
+<a id="__codelineno-33-7" name="__codelineno-33-7"></a>};
+<a id="__codelineno-33-8" name="__codelineno-33-8"></a>
+<a id="__codelineno-33-9" name="__codelineno-33-9"></a>int main(){
+<a id="__codelineno-33-10" name="__codelineno-33-10"></a>  Student *ps1=(Student*)malloc(sizeof(Student))；
+<a id="__codelineno-33-11" name="__codelineno-33-11"></a>  cout&lt;&lt;&quot;ps1-&gt;id=&quot;&lt;&lt;ps1-&gt;id&lt;&lt;endl;//构造函数，初始化
+<a id="__codelineno-33-12" name="__codelineno-33-12"></a>  Student *ps2=new Student;
+<a id="__codelineno-33-13" name="__codelineno-33-13"></a>  cout&lt;&lt;&quot;ps2-&gt;id&quot;=&quot;&lt;&lt;ps2-&gt;id&lt;&lt;endl;//未调用函数
+<a id="__codelineno-33-14" name="__codelineno-33-14"></a>
+<a id="__codelineno-33-15" name="__codelineno-33-15"></a>  free(ps1);//析构函数
+<a id="__codelineno-33-16" name="__codelineno-33-16"></a>  delete ps2;//未调用析构函数
+<a id="__codelineno-33-17" name="__codelineno-33-17"></a>
+<a id="__codelineno-33-18" name="__codelineno-33-18"></a>  Student *psarr =new students[5];
+<a id="__codelineno-33-19" name="__codelineno-33-19"></a>  for(int i=0;i&lt;5;i++&gt;)//打印值的时候都是0，构造函数
+<a id="__codelineno-33-20" name="__codelineno-33-20"></a>    psarr[i].id=1;
+<a id="__codelineno-33-21" name="__codelineno-33-21"></a>
+<a id="__codelineno-33-22" name="__codelineno-33-22"></a>
+<a id="__codelineno-33-23" name="__codelineno-33-23"></a>  delet [] psarr;
+<a id="__codelineno-33-24" name="__codelineno-33-24"></a>}
+</code></pre></div></td></tr></table></div></p>
+<p>new 之后一定要delete一次,否则如果程序<strong>持续运行</strong>就会内存泄露，如果很快运行完了操作系统就会收回</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-34-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-34-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-34-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-34-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-34-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-34-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-34-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-34-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-34-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-34-10">10</a></span>
+<span class="normal"><a href="#__codelineno-34-11">11</a></span>
+<span class="normal"><a href="#__codelineno-34-12">12</a></span>
+<span class="normal"><a href="#__codelineno-34-13">13</a></span>
+<span class="normal"><a href="#__codelineno-34-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1"></a>void f()
+<a id="__codelineno-34-2" name="__codelineno-34-2"></a>{
+<a id="__codelineno-34-3" name="__codelineno-34-3"></a>  int *p=new int[1000];
+<a id="__codelineno-34-4" name="__codelineno-34-4"></a>  p[0]=2025；
+<a id="__codelineno-34-5" name="__codelineno-34-5"></a>  p[1]=3;
+<a id="__codelineno-34-6" name="__codelineno-34-6"></a>  p[2]=10;
+<a id="__codelineno-34-7" name="__codelineno-34-7"></a>  cout&lt;&lt;in f()&lt;&lt;p&lt;&lt;endl;
+<a id="__codelineno-34-8" name="__codelineno-34-8"></a>
+<a id="__codelineno-34-9" name="__codelineno-34-9"></a>}
+<a id="__codelineno-34-10" name="__codelineno-34-10"></a>
+<a id="__codelineno-34-11" name="__codelineno-34-11"></a>int main
+<a id="__codelineno-34-12" name="__codelineno-34-12"></a>{
+<a id="__codelineno-34-13" name="__codelineno-34-13"></a>//死循环,那么内存就会一直被占用
+<a id="__codelineno-34-14" name="__codelineno-34-14"></a>}
+</code></pre></div></td></tr></table></div>
+<h3 id="const">const<a class="headerlink" href="#const" title="Permanent link"></a></h3>
+<ul>
+<li>一定要被初始化,字面量，存在符号表</li>
+<li>
+<p>run time
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-35-1">1</a></span>
+<span class="normal"><a href="#__codelineno-35-2">2</a></span>
+<span class="normal"><a href="#__codelineno-35-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1"></a>int x;
+<a id="__codelineno-35-2" name="__codelineno-35-2"></a>cin&gt;&gt;x;
+<a id="__codelineno-35-3" name="__codelineno-35-3"></a>const int size =x;
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>pointers with const</p>
+</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-36-1">1</a></span>
+<span class="normal"><a href="#__codelineno-36-2">2</a></span>
+<span class="normal"><a href="#__codelineno-36-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1"></a>int * const p=a;  //p is const
+<a id="__codelineno-36-2" name="__codelineno-36-2"></a>*p=20;            //Ok
+<a id="__codelineno-36-3" name="__codelineno-36-3"></a>p++;              //error
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-37-1">1</a></span>
+<span class="normal"><a href="#__codelineno-37-2">2</a></span>
+<span class="normal"><a href="#__codelineno-37-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1"></a>const int *p=a;   //*p const
+<a id="__codelineno-37-2" name="__codelineno-37-2"></a>*p=20;            // no
+<a id="__codelineno-37-3" name="__codelineno-37-3"></a>p++;              //Ok
+</code></pre></div></td></tr></table></div>
+<p>pointers and constants
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-38-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-38-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-38-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-38-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-38-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-38-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-38-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-38-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-38-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-38-10">10</a></span>
+<span class="normal"><a href="#__codelineno-38-11">11</a></span>
+<span class="normal"><a href="#__codelineno-38-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1"></a>int i;
+<a id="__codelineno-38-2" name="__codelineno-38-2"></a>const int ci;
+<a id="__codelineno-38-3" name="__codelineno-38-3"></a>int * ip;
+<a id="__codelineno-38-4" name="__codelineno-38-4"></a>const int* cip;
+<a id="__codelineno-38-5" name="__codelineno-38-5"></a>
+<a id="__codelineno-38-6" name="__codelineno-38-6"></a>ip=&amp;i;
+<a id="__codelineno-38-7" name="__codelineno-38-7"></a>ip=&amp;ci;         //error
+<a id="__codelineno-38-8" name="__codelineno-38-8"></a>cip=&amp;i;
+<a id="__codelineno-38-9" name="__codelineno-38-9"></a>cip=&amp;ci;
+<a id="__codelineno-38-10" name="__codelineno-38-10"></a>
+<a id="__codelineno-38-11" name="__codelineno-38-11"></a>*ip=2;          //ok
+<a id="__codelineno-38-12" name="__codelineno-38-12"></a>*cip=2;         //error
+</code></pre></div></td></tr></table></div></p>
+<h3 id="string">string<a class="headerlink" href="#string" title="Permanent link"></a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-39-1">1</a></span>
+<span class="normal"><a href="#__codelineno-39-2">2</a></span>
+<span class="normal"><a href="#__codelineno-39-3">3</a></span>
+<span class="normal"><a href="#__codelineno-39-4">4</a></span>
+<span class="normal"><a href="#__codelineno-39-5">5</a></span>
+<span class="normal"><a href="#__codelineno-39-6">6</a></span>
+<span class="normal"><a href="#__codelineno-39-7">7</a></span>
+<span class="normal"><a href="#__codelineno-39-8">8</a></span>
+<span class="normal"><a href="#__codelineno-39-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1"></a>int main(int argc,int * argv)
+<a id="__codelineno-39-2" name="__codelineno-39-2"></a>{
+<a id="__codelineno-39-3" name="__codelineno-39-3"></a>
+<a id="__codelineno-39-4" name="__codelineno-39-4"></a>  const char s1*=&quot;hello&quot;;//代码段
+<a id="__codelineno-39-5" name="__codelineno-39-5"></a>  char s2[]=&quot;hello&quot;;//stack
+<a id="__codelineno-39-6" name="__codelineno-39-6"></a>
+<a id="__codelineno-39-7" name="__codelineno-39-7"></a>  cout&lt;&lt;(void*)s1&lt;&lt;endl
+<a id="__codelineno-39-8" name="__codelineno-39-8"></a>
+<a id="__codelineno-39-9" name="__codelineno-39-9"></a>}
 </code></pre></div></td></tr></table></div>
 
 
